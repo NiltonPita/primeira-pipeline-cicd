@@ -22,4 +22,4 @@ jobs:
         push: true
         tags: | 
           niltonpita/aula-primeira-pipeline:v${{ github.run_number }} 
-          niltonpitaz/aula-primeira-pipeline:latest 
+          niltonpita/aula-primeira-pipeline:latest 
