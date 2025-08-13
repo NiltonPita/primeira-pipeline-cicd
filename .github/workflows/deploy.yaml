@@ -1,15 +1,15 @@
 name: Deploy no Kubernetes
 on:
-    workflow_call:
-        inputs:
-           manifests:
-            type: string
-            required: true
-            description: "Arquivo de manifesto para deploy"
-          images:  
-            type: string
-            required: true
-            description: "Imagens que serão ateradas no manifesto"
+  workflow_call:
+    inputs:
+      manifests:
+      type: string
+      required: true
+      description: "Arquivo de manifesto para deploy"
+    images:  
+      type: string
+      required: true
+      description: "Imagens que serão ateradas no manifesto"
 jobs:
    deploy-k8s:
     runs-on: ubuntu-latest
