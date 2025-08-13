@@ -25,7 +25,7 @@ jobs:
           niltonpita/aula-primeira-pipeline:latest 
   CD:
     needs: [CI]
-    uses: NiltonPita/primeira-pipeline-cicd/.github/workflows/deploy.yaml@main
+    uses: niltonpita/primeira-pipeline-cicd/.github/workflows/deploy.yaml@main
     with: 
       manigfests: k8s/deployment.yml
       images: niltonpita/aula-primeira-pipeline:v${{ github.run_number }} 
