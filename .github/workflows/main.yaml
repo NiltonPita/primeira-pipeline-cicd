@@ -27,6 +27,8 @@ jobs:
     needs: [CI]
     uses: niltonpita/primeira-pipeline-cicd/.github/workflows/deploy.yaml@main
     with: 
-      manigfests: k8s/deployment.yml
-      images: niltonpita/aula-primeira-pipeline:v${{ github.run_number }} 
+      manigfests: |
+        k8s/deployment.yml
+      images: |
+        niltonpita/aula-primeira-pipeline:v${{ github.run_number }} 
     secrets: inherit
